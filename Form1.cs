@@ -423,7 +423,7 @@ namespace gws.cpanel
         private void UpdateFooterLabel()
         {
             int currentYear = DateTime.Now.Year;
-            lblFooter.Text = $"Copyright (c) 2022 - {currentYear} Gamma Team and Contributors";
+            lblFooter.Text = $"Copyright (c) 2022 - {currentYear} Gamma Team and Contributors | GWS Control Panel v1.0.0";
         }
 
         private void lblFooter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
