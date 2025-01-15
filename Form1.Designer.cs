@@ -43,6 +43,7 @@ namespace gws.cpanel
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnStartServer = new System.Windows.Forms.Button();
             this.btnStopServer = new System.Windows.Forms.Button();
             this.txtServerLogs = new System.Windows.Forms.TextBox();
@@ -285,6 +286,7 @@ namespace gws.cpanel
             this.Controls.Add(this.btnSaveConfig);
             this.Controls.Add(this.txtServerLogs);
             this.Controls.Add(this.lblServerStatus);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Gamma Web Server Control Panel";
             this.ResumeLayout(false);
