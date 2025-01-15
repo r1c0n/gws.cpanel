@@ -249,13 +249,13 @@ namespace gws.cpanel
             // lblFooter
             // 
             this.lblFooter.AutoSize = true;
-            this.lblFooter.LinkArea = new System.Windows.Forms.LinkArea(41, 53);
-            this.lblFooter.Location = new System.Drawing.Point(506, 580);
+            this.lblFooter.LinkArea = new System.Windows.Forms.LinkArea(41, 12);
+            this.lblFooter.Location = new System.Drawing.Point(365, 583);
             this.lblFooter.Name = "lblFooter";
-            this.lblFooter.Size = new System.Drawing.Size(294, 17);
+            this.lblFooter.Size = new System.Drawing.Size(436, 17);
             this.lblFooter.TabIndex = 23;
             this.lblFooter.TabStop = true;
-            this.lblFooter.Text = "Copyright (c) 2022 - 2025 Gamma Team and Contributors";
+            this.lblFooter.Text = "Copyright (c) 2022 - 2025 Gamma Team and Contributors | GWS Control Panel v1.0.0";
             this.lblFooter.UseCompatibleTextRendering = true;
             this.lblFooter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblFooter_LinkClicked);
             // 
