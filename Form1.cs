@@ -196,9 +196,19 @@ namespace gws.cpanel
         private bool ValidateInputs()
         {
             // Validate port number
-            if (!int.TryParse(txtPort.Text, out int port) || port <= 0 || port > 65535)
+            if (string.IsNullOrWhiteSpace(txtPort.Text) || !txtPort.Text.StartsWith(":"))
             {
-                MessageBox.Show("Please enter a valid port number (1-65535).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The port number must start with a colon (:).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Extract the number part after the colon
+            string portText = txtPort.Text.TrimStart(':');
+
+            // Check if the number is valid
+            if (!int.TryParse(portText, out int port) || port <= 0 || port > 65535)
+            {
+                MessageBox.Show("Please enter a valid port number (1-65535) after the colon (:).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
