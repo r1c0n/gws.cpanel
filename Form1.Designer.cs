@@ -122,9 +122,9 @@ namespace gws.cpanel
             // 
             // txtDomain
             // 
-            this.txtDomain.Location = new System.Drawing.Point(330, 60);
+            this.txtDomain.Location = new System.Drawing.Point(365, 60);
             this.txtDomain.Name = "txtDomain";
-            this.txtDomain.Size = new System.Drawing.Size(150, 20);
+            this.txtDomain.Size = new System.Drawing.Size(115, 20);
             this.txtDomain.TabIndex = 6;
             // 
             // lblDomain
