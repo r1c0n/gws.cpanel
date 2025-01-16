@@ -286,7 +286,9 @@ namespace gws.cpanel
             this.Controls.Add(this.btnSaveConfig);
             this.Controls.Add(this.txtServerLogs);
             this.Controls.Add(this.lblServerStatus);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Gamma Web Server Control Panel";
             this.ResumeLayout(false);
